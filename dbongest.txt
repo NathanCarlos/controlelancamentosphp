@@ -1,0 +1,38 @@
+create table usuarios(
+id_usuario INT not null primary key AUTO_INCREMENT,
+nome_usuario varchar(50) not null,
+email_usuario varchar(100) UNIQUE not null,
+senha_usuario varchar(255) not null,
+pagamento_pendente boolean not null,
+id_planofk int,
+data_expiracao date,
+INDEX(id_usuario)
+) ENGINE = INNODB;
+create table planos(
+id_plano int not null PRIMARY key AUTO_INCREMENT,
+plano varchar(20)
+) ENGINE = INNODB;
+create table lancamentos(
+id_lancamento int not null AUTO_INCREMENT PRIMARY KEY,
+id_usuariofk int,
+id_tipo_lancamentofk int,
+desc_lancamento varchar(255),
+obs_lancamento varchar(100),
+valor_lancamento float,
+data_lancamento date,
+anexo_lancamento MEDIUMBLOB
+) ENGINE = INNODB;
+create table tipo_lancamento(
+id_tp_lancamento int not null PRIMARY KEY AUTO_INCREMENT,
+desc_tipo_lancamento varchar(100)
+) ENGINE = INNODB;
+insert into tipo_lancamento(desc_tipo_lancamento) VALUES('Despesa');
+insert into tipo_lancamento(desc_tipo_lancamento) VALUES('Receita');
+create table categoria(
+id_categoria int not null PRIMARY KEY AUTO_INCREMENT,
+desc_categoria varchar(50)
+) ENGINE = INNODB;
+create table cartao(
+id_cartao int not null PRIMARY KEY AUTO_INCREMENT,
+desc_cartao varchar(100)
+) ENGINE = INNODB;
