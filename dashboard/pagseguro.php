@@ -28,15 +28,15 @@ $pagseguro['reference'] = '1';
 //Nome
 $pagseguro['senderName'] = 'Ambiente Teste';
 //Cpf
-$pagseguro['CPF'] = '48679899836';
+$pagseguro['CPF'] = '15999385296';
 //Data de nascimento.
 $pagseguro['senderBornDate'] = '01/01/2000' ;
 //DDD
 $pagseguro['senderAreaCode'] = '11';
 //Número do celular
-$pagseguro['senderPhone'] = '963420633';
+$pagseguro['senderPhone'] = '959226783';
 //Email
-$pagseguro['senderEmail'] = 'nathan324116@gmail.com';
+$pagseguro['senderEmail'] = 'teste@teste.com';
 //Tipo de frete, no caso 3 é grátis.
 $pagseguro['shippingType'] = '3';
 //Endereço
@@ -48,7 +48,7 @@ $pagseguro['shippingAddressComplement'] = 'Complemento';
 //Bairro
 $pagseguro['shippingAddressDistrict'] = 'Bairro';
 //Cep
-$pagseguro['shippingAddressPostalCode'] = '07134625';
+$pagseguro['shippingAddressPostalCode'] = '07134614';
 //Cidade
 $pagseguro['shippingAddressCity'] = 'Cidade';
 //Estado
